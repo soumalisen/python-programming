@@ -1,0 +1,11 @@
+length=int(input("Enter the Length of rectangle:"))
+breath=int(input("Enter the Breadth of rectangle:"))
+r=int(input("Enter the Radius of Circle:"))
+area1=length*breath
+perimeter=2*(length+breath)
+area2=3.14*r*r
+circum=2*3.14*r
+print("Area of Rectangle =",area1)
+print("Perimeter of Rectangle =",perimeter)
+print("Area of Circle =",area2)
+print("Circum of Circle =",circum)
