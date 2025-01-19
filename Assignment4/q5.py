@@ -1,15 +1,9 @@
-def lcm(a,b):
-    if a>b:
-        greater=a
-    else:
-        greater=b
-    while(True):
-        if((greater%a==0) and (greater%b==0)):
-            lcm=greater
-            break
-        greater+=1
-    return lcm
+def calculate_lcm(a, b):
+    lcm = max(a, b)
 
-a=int(input("Enter first number: "))
-b=int(input("Enter second number: "))
-print("LCM of",a,"and",b,"is",lcm(a,b))
+    while True:
+        if lcm % a == 0 and lcm % b == 0:
+            break
+        lcm += 1
+
+    return lcm

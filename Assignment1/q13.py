@@ -1,21 +1,10 @@
-num=int(input("Enter the Five Digits :"))
-onum=num
-sum=0
-a=(num//10000)+1
-num=num%10000
-sum=sum+(a*10000);
-a=(num//1000)+1
-num=num%1000
-sum=sum+(a*1000)
-a=(num//100)+1
-num=num%100
-sum=sum+(a*100)
+number=int(input("Enter the Five Digits :"))
 
-a=(num//10)+1
-num=num%10
-sum=sum+(a*10)
+digit1 = ((number // 10000) + 1) % 10
+digit2 = (((number // 1000) % 10) + 1) % 10
+digit3 = (((number  // 100) % 10) + 1) % 10
+digit4 = (((number // 10) % 10) + 1) % 10
+digit5 = ((number % 10) + 1) % 10
 
-a=num+1
-sum=sum+a
-print("Old Number :",onum)
-print("New Number :",sum)
+new_number = digit1 * 10000 + digit2 * 1000 + digit3 * 100 + digit4 * 10 + digit5
+print("new number is", new_number)

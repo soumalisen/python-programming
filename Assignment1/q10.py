@@ -9,7 +9,7 @@ literate_men=(percentage_literate_men/100)*population
 literate_women=total_literates-literate_men
 illiterate_men=total_men-literate_men
 
-illiterate_women=population-total_men-literate_men
+illiterate_women=population-total_men-literate_women
 
 print("illiterate men",int(illiterate_men))
 print("illiterate women:",int(illiterate_women))
